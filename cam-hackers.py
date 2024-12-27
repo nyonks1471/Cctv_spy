@@ -1,7 +1,7 @@
 
 #!/usr/bin/env python3
 
-
+#Made by nyonks
 import requests, re , colorama ,random
 from requests.structures import CaseInsensitiveDict
 colorama.init()
