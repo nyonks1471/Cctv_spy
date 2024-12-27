@@ -1,7 +1,6 @@
 
 #!/usr/bin/env python3
-#-*- coding: utf-8 -*-
-#github.com/AngelSecurityTeam/Cam-Hackers
+
 
 import requests, re , colorama ,random
 from requests.structures import CaseInsensitiveDict
@@ -23,15 +22,7 @@ resp = requests.get(url, headers=headers)
 data = resp.json()
 countries = data['countries']
 
-print("""
-\033[1;31m\033[1;37m ██████╗ █████╗ ███╗   ███╗      ██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗ ███████╗
-██╔════╝██╔══██╗████╗ ████║      ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗██╔════╝
-██║     ███████║██╔████╔██║█████╗███████║███████║██║     █████╔╝ █████╗  ██████╔╝███████╗
-██║     ██╔══██║██║╚██╔╝██║╚════╝██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗╚════██║
-╚██████╗██║  ██║██║ ╚═╝ ██║      ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║███████║
-\033[1;31m ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝      ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝
-\033[1;31m                                                                        ANGELSECURITYTEAM \033[1;31m\033[1;37m""")
-
+print("Nyonks") 
 for key, value in countries.items():
     print(f'Code : ({key}) - {value["country"]} / ({value["count"]})  ')
     print("")
